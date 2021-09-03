@@ -40,7 +40,7 @@ class CollectionViewController: UICollectionViewController {
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CollectionViewCell {
             
-            if let name = self.imageModel.getImageNameForIndex(indexPath.row) as? String{
+            if let name = self.imageModel.getImageName(for: indexPath.row) as? String{
                 cell.imageView.image = self.imageModel.getImageWithName(name)
             }
             
