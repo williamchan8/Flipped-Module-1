@@ -6,9 +6,10 @@
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf0 Is this new implementation of the model more efficient? Why or Why not?\
- - \
+ - Yes it is. Pre-loading the images makes the app take less time when transitioning between the views/pages once the app is up and running.\
 \
 Is this implementation of the model more scalable? Why or Why not?\
- - \
+ - It is not. Image names are hardcoded which will become hard to deal with as the number of images increases. In addition, preloading the images can create memory issues when dealing with many images.\
 \
-If there were 1000 image in the image.assets file, what would you change in the implementation of the image model?}
+If there were 1000 image in the image.assets file, what would you change in the implementation of the image model?\
+ - Instead of hard coding image names, it would be better to instead put all images in a centralized directory and have the app search through the directory for all images. In addition, the image dict could be loaded using a for loop utilizing the image names.}
