@@ -20,8 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSInteger)numberOfImages;
 -(NSString*)getImageNameForIndex:(NSInteger)index;
 
-@property (nonatomic,retain) NSArray* imageNames;
-@property (nonatomic,retain) NSMutableDictionary* imageDict;
+@property (nonatomic,strong) NSArray* imageNames;
+@property (nonatomic,strong) NSMutableDictionary* imageDict;
 
 
 @end
