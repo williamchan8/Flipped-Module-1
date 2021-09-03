@@ -24,7 +24,7 @@
 
 -(NSArray*) imageNames{
     if(!_imageNames)
-        _imageNames = @[@"Bill",@"Eric",@"Jeff"];
+        _imageNames = @[@"Bill",@"Eric",@"Jeff",@"10",@"80",@"20"];
         
     
     return _imageNames;
@@ -38,6 +38,9 @@
         _imageDict[@"Bill"] = [UIImage imageNamed:@"Bill"];
         _imageDict[@"Eric"] = [UIImage imageNamed:@"Eric"];
         _imageDict[@"Jeff"] = [UIImage imageNamed:@"Jeff"];
+        _imageDict[@"10"] = [UIImage imageNamed:@"10"];
+        _imageDict[@"20"] = [UIImage imageNamed:@"20"];
+        _imageDict[@"80"] = [UIImage imageNamed:@"80"];
 //        for(id obj in _imageNames){
 //           _imageDict[obj] = [self getImageWithName: obj];
 //        }
