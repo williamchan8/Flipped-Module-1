@@ -34,9 +34,13 @@
     if(!_imageDict){
         _imageDict = [[NSMutableDictionary alloc] init];
         
+        
         _imageDict[@"Bill"] = [UIImage imageNamed:@"Bill"];
         _imageDict[@"Eric"] = [UIImage imageNamed:@"Eric"];
         _imageDict[@"Jeff"] = [UIImage imageNamed:@"Jeff"];
+//        for(id obj in _imageNames){
+//           _imageDict[obj] = [self getImageWithName: obj];
+//        }
     }
     return _imageDict;
 }
@@ -59,15 +63,13 @@
 }
 
 -(NSInteger)numberOfImages{
-    return [_imageDict count];
+    return self.imageDict.count;//[_imageDict count];
     
 }
 -(NSString*)getImageNameForIndex:(NSInteger)index{
     
-    return _imageNames[index];
+    return self.imageNames[index];//_imageNames[index];
 }
-
-
 
 
 @end
